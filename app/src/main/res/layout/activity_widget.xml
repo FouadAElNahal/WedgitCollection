@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff993300"
+        android:text="What kind of Your Hot Drink?"
+        android:textColor="#ffffff"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCoffeeType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioMilk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milk" />
+
+        <RadioButton
+            android:id="@+id/radiocoffee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Coffee" />
+
+        <RadioButton
+            android:id="@+id/radioGreentea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Greentea" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff993300"
+        android:text="What kind of Your Suger?"
+        android:textColor="#ffffff"
+        android:textStyle="bold|italic" />
+
+    <CheckBox
+        android:id="@+id/withSuger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With Suger" />
+
+    <CheckBox
+        android:id="@+id/withNoSuger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="With No Suger" />
+
+    <Button
+        android:id="@+id/summarychecked"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="Checked Order Summary" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher_round" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:background="#ffff00"
+        android:src="@drawable/rr" />
+
+    <Button
+        android:id="@+id/button_with_textandImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:drawableLeft="@mipmap/ic_launcher_round"
+        android:text="text" />
+
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:text="Switch" />
+
+    <ToggleButton
+        android:id="@+id/togglebutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:textOff="helloOff"
+        android:textOn="helloOn" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:onClick="nextWidget"
+        android:text="Next Widgets" />
+
+    </LinearLayout>
+</ScrollView>
+
